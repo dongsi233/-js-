@@ -4,3 +4,12 @@ Array.prototype.remove = function (from, to) {
 	this.length = from < 0 ? this.length + from : from;
 	return this.push.apply(this, rest);
 }
+
+//获取image的base64
+var reader = new FileReader();
+reader.onload = function(e){
+	var url = e.target.result
+}
+reader.readAsDataURL(files);
+
+
